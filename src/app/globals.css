@@ -4,15 +4,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --border: #E2E8F0;
+  --footer: #333;
+  --yellow: #FFC700;
+  --gray: #707070;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
@@ -24,4 +22,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.max-width {
+  @apply mx-auto max-w-[942px] w-full px-[5px];
+}
+
+
+
+hr {
+  border-color: var(--border);
+}
+
+.heart-image {
+  filter: invert(28%) sepia(96%) saturate(7498%) hue-rotate(358deg) brightness(107%) contrast(112%);
 }
